@@ -6,7 +6,7 @@
 \alias{tabpfn-package}
 \title{tabpfn: Prior-Data Fitted Network Foundational Model for Tabular Data}
 \description{
-R functions are used via 'Python' to train and predict 'TabPFN' models of Hollmann et al (2025) "Accurate predictions on small data with a tabular foundation model," Nature, 637(8045) \doi{10.1038/s41586-024-08328-6}.
+Provides a consistent API for classification and regression models based on the 'TabPFN' model of Hollmann et al. (2025), "Accurate predictions on small data with a tabular foundation model," Nature, 637(8045) \doi{10.1038/s41586-024-08328-6}. The calculations are served via 'Python' to train and predict the model.
 }
 \seealso{
 Useful links:

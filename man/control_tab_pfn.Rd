@@ -39,6 +39,10 @@ errors. Values are either a logical or \code{"auto"}.}
 
 \item{random_state}{An integer to set the random number stream.}
 }
+\value{
+A list with extra class \code{"control_tab_pfn"} that has named elements
+for each of the argument values.
+}
 \description{
 Controlling TabPFN execution
 }

@@ -17,6 +17,8 @@
 #' @param memory_saving_mode A character string to help with out-of-memory
 #' errors. Values are either a logical or `"auto"`.
 #' @param random_state An integer to set the random number stream.
+#' @return A list with extra class `"control_tab_pfn"` that has named elements
+#' for each of the argument values.
 #' @references
 #' \url{https://github.com/PriorLabs/TabPFN/blob/main/src/tabpfn/classifier.py},
 #' \url{https://github.com/PriorLabs/TabPFN/blob/main/src/tabpfn/regressor.py}
