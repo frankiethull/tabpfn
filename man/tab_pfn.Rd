@@ -276,6 +276,7 @@ A value of \code{softmax_temperature = 1} results in a plain softmax value.
 predictors <- mtcars[, -1]
 outcome <- mtcars[, 1]
 
+\dontrun{
 if (is_tab_pfn_installed() & interactive()) {
  # XY interface
  mod <- tab_pfn(predictors, outcome)
@@ -293,6 +294,7 @@ if (is_tab_pfn_installed() & interactive()) {
   mod3 <- tab_pfn(rec, mtcars)
   mod3
  }
+}
 }
 
 }

@@ -220,6 +220,7 @@
 #' predictors <- mtcars[, -1]
 #' outcome <- mtcars[, 1]
 #'
+#' \dontrun{
 #' if (is_tab_pfn_installed() & interactive()) {
 #'  # XY interface
 #'  mod <- tab_pfn(predictors, outcome)
@@ -237,6 +238,7 @@
 #'   mod3 <- tab_pfn(rec, mtcars)
 #'   mod3
 #'  }
+#' }
 #' }
 #'
 #' @export

@@ -20,8 +20,9 @@
 #' @examples
 #' # Minimal example for quick execution
 #' car_train <- mtcars[ 1:5,   ]
-#' car_test  <- mtcars[10:15, -1]
+#' car_test  <- mtcars[6, -1]
 #'
+#' \dontrun{
 #' # Fit
 #' if (is_tab_pfn_installed() & interactive()) {
 #'  mod <- tab_pfn(mpg ~ cyl + log(drat), car_train)
@@ -29,6 +30,7 @@
 #'  # Predict
 #'  predict(mod, car_test)
 #'  augment(mod, car_test)
+#' }
 #' }
 #'
 #' @export
