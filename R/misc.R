@@ -30,7 +30,7 @@ check_libomp <- function() {
   # reuse it. Only error if libomp came from outside the Python env (e.g. an R
   # package or an OpenMP-enabled R binary), because torch would then try to load
   # its own bundled copy alongside a foreign one, causing a segfault.
-  py_env_root <- dirname(dirname(reticulate::py_exe()))
+  py_env_root <- reticulate::py_config()$prefix
   outside_py_env <- !startsWith(libomp_paths, py_env_root)
 
   if (any(outside_py_env)) {
