@@ -1,4 +1,4 @@
-# tabpfn (dev)
+# tabpfn (development version)
 
 - added `download_all_models` to close (#15) @frankiethull
 
