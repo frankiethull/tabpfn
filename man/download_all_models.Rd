@@ -4,10 +4,10 @@
 \alias{download_all_models}
 \title{download all TabPFN pre-trained model checkpoints}
 \usage{
-download_all_models(cache_dir = "~/.cache/tabpfn")
+download_all_models(cache_dir = NULL)
 }
 \arguments{
-\item{cache_dir}{a file path for the model cache}
+\item{cache_dir}{an option to override the default cache directory}
 }
 \description{
 As of 2026-05-05, there are 36 pre-trained models equalling roughly 1.2 GB of storage.
@@ -17,6 +17,6 @@ Downloading all models will take some time, please be patient!
 }
 \examples{
 \donttest{
-download_all_models(cache_dir = "~/.cache/tabpfn")
+download_all_models()
 }
 }
