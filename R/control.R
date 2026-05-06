@@ -16,8 +16,6 @@
 #' `"fit_with_cache"`, and `"batched"`.
 #' @param memory_saving_mode A character string to help with out-of-memory
 #' errors. Values are either a logical or `"auto"`.
-#' @param model_path a character string to a downloaded model path, 
-#' otherwise the default is used. 
 #' @param random_state An integer to set the random number stream.
 #' @return A list with extra class `"control_tab_pfn"` that has named elements
 #' for each of the argument values.
@@ -34,14 +32,12 @@ control_tab_pfn <- function(
   inference_precision = "auto",
   fit_mode = "fit_preprocessors",
   memory_saving_mode = "auto",
-  model_path = NULL,
   random_state = sample.int(10^6, 1)
 ) {
   check_bool(ignore_pretraining_limits)
   check_string(fit_mode)
   check_string(device)
   check_string(inference_precision)
-  check_string(model_path, allow_null = TRUE)
   check_number_whole(n_preprocessing_jobs)
   check_number_whole(random_state)
 
@@ -65,7 +61,6 @@ control_tab_pfn <- function(
     inference_precision = inference_precision,
     fit_mode = fit_mode,
     memory_saving_mode = memory_saving_mode,
-    model_path = model_path,
     random_state = as.integer(random_state)
   )
 

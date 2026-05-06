@@ -11,7 +11,6 @@ control_tab_pfn(
   inference_precision = "auto",
   fit_mode = "fit_preprocessors",
   memory_saving_mode = "auto",
-  model_path = NULL,
   random_state = sample.int(10^6, 1)
 )
 }
@@ -37,9 +36,6 @@ cached. Values are \code{"fit_preprocessors"} (the default), \code{"low_memory"}
 
 \item{memory_saving_mode}{A character string to help with out-of-memory
 errors. Values are either a logical or \code{"auto"}.}
-
-\item{model_path}{a character string to a downloaded model path,
-otherwise the default is used.}
 
 \item{random_state}{An integer to set the random number stream.}
 }
